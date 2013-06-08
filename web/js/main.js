@@ -32,7 +32,7 @@
     var socket;
     var colors = ["#bbcece","#cebbce","#cecebb","#ceceff","#ffcece","#ceffce"];
     if (window.WebSocket) {
-        socket = new WebSocket("ws://localhost:8080/");
+        socket = new WebSocket("ws://"+ location.host);
         socket.onmessage = function(event) {
           if(event.data === 'drop'){
             var initPosX = parseInt(Math.random() * canvas.width);
