@@ -66,7 +66,7 @@
         }
     } 
 
-    canvas.addEventListener('click', function(e){
+    document.getElementById('drop-btn').addEventListener('click', function(e){
       send("drop");
     });
 })();
